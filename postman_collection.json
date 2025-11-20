@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "Order Execution Engine",
+    "_postman_id": "order-exec-collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/health"
+      }
+    },
+    {
+      "name": "Execute Order",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "url": "http://localhost:3000/orders/execute",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"fromToken\":\"SOL\",\"toToken\":\"USDC\",\"amount\":\"1\"}"
+        }
+      }
+    },
+    {
+      "name": "WebSocket Instructions",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/ws/<orderId>"
+      },
+      "description": "Use any WS client to connect to ws://localhost:3000/ws/<orderId> to view live status updates."
+    }
+  ]
+}
