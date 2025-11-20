@@ -1,6 +1,7 @@
 services:
   - type: web
     name: order-execution-engine
+    runtime : docker
     env: node
     plan: starter
     rootDir: ./
