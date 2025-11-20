@@ -21,15 +21,18 @@
   },
   "homepage": "https://github.com/rcmw0204/order-execution-engine#readme",
   "dependencies": {
-    "@types/node": "^24.10.1",
-    "@types/pg": "^8.15.6",
-    "@types/ws": "^8.18.1",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3",
-    "bullmq": "^5.64.0",
-    "fastify": "^4.29.1",
-    "ioredis": "^5.8.2",
-    "pg": "^8.16.3",
-    "ws": "^8.18.3"
-  }
+  "bullmq": "^5.64.0",
+  "fastify": "^5.6.2",
+  "@fastify/websocket": "^8.2.0",
+  "ioredis": "^5.8.2",
+  "pg": "^8.16.3",
+  "ws": "^8.18.3",
+
+  "typescript": "^5.9.3",
+  "ts-node": "^10.9.2",
+  "@types/node": "^24.10.1",
+
+  "@types/pg": "^8.15.6",
+  "@types/ws": "^8.18.1"
+}
 }
