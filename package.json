@@ -1,38 +1,35 @@
 {
   "name": "order-execution-engine",
   "version": "1.0.0",
-  "description": "Solana DEX order execution engine with Fastify, TypeScript, WebSockets, BullMQ, Mock Raydium/Meteora routing",
-  "main": "index.js",
+  "description": "Solana DEX order execution engine",
+  "main": "dist/server.js",
+  "type": "module",
+
   "scripts": {
-    "dev": "node --loader ts-node/esm src/server.ts",
+    "dev": "ts-node src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rcmw0204/order-execution-engine.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/rcmw0204/order-execution-engine/issues"
-  },
-  "homepage": "https://github.com/rcmw0204/order-execution-engine#readme",
+
   "dependencies": {
-  "bullmq": "^5.64.0",
-  "fastify": "^5.6.2",
-  "@fastify/websocket": "^8.2.0",
-  "ioredis": "^5.8.2",
-  "pg": "^8.16.3",
-  "ws": "^8.18.3",
+    "fastify": "^5.6.2",
+    "@fastify/websocket": "^8.2.0",
 
-  "typescript": "^5.9.3",
-  "ts-node": "^10.9.2",
-  "@types/node": "^24.10.1",
+    "bullmq": "^5.64.0",
+    "ioredis": "^5.8.2",
 
-  "@types/pg": "^8.15.6",
-  "@types/ws": "^8.18.1"
-}
+    "pg": "^8.16.3",
+    "@types/pg": "^8.15.6",
+
+    "ws": "^8.18.3",
+    "@types/ws": "^8.18.1",
+
+    "typescript": "^5.9.3",
+    "ts-node": "^10.9.2",
+    "@types/node": "^24.10.1"
+  },
+
+  "engines": {
+    "node": "20.x"
+  }
 }
